@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.activity.SearchCocktail">
+
+
+    <RelativeLayout
+        android:id="@+id/search_cocktail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/search_cocktail_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_cocktail_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/cocktail_name_search"
+                android:inputType="textEmailAddress"
+                android:paddingTop="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/search_cocktail_clear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/search_cocktail_til"
+            android:layout_alignEnd="@+id/search_cocktail_til"
+            android:layout_alignBottom="@+id/search_cocktail_til"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="clearText"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_clear_selector" />
+
+        <View
+            android:id="@+id/search_cocktail_recyclerview_fader"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/search_cocktail_til"
+            android:background="@drawable/search_cocktail_recyclerview_fader"
+            android:elevation="10dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_cocktail_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_cocktail_til"
+            android:visibility="gone"
+            tools:listitem="@layout/rv_item_saved_cocktail" />
+
+    </RelativeLayout>
+</layout>

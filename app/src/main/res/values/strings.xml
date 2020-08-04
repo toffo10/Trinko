@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Trinko</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="clear_saved_pubs">Clear Saved Cocktails</string>
+    <string name="drawer_closed">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="cocktail_name_search">Cocktail Name</string>
+
+    <string name="true_string">true</string>
+    <string name="false_string">false</string>
+    <string name="title_activity_cocktail_detail">ScrollingActivity</string>
+
+    <string name="action_delete">Delete</string>
+    <string name="Ingredients">Ingredients</string>
+    <string name="Instruction">Instruction</string>
+    <string name="cocktail_removed_from_favourites">Cocktail removed from favourites</string>
+    <string name="cocktail_added_to_favourites">Cocktail added to favourites</string>
+    <string name="remember_to_drink">Remember to drink</string>
+    <string name="undo">Undo</string>
+    <string name="warning">Warning</string>
+    <string name="delete_all_cocktails">Are you sure you want to delete all the saved cocktails?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+</resources>

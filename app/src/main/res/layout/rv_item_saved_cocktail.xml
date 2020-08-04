@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/rv_item_saved_cocktail_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:transitionName="cocktailImage"
+            tools:src="@drawable/pub_placeholder" />
+
+        <TextView
+            android:id="@+id/rv_item_saved_cocktail_name"
+            style="@style/RvPubName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rv_item_saved_cocktail_desc"
+            android:layout_marginHorizontal="8dp"
+            android:transitionName="cocktailName"
+            tools:text="Nome pub" />
+
+        <TextView
+            android:id="@+id/rv_item_saved_cocktail_desc"
+            style="@style/RvPubDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rv_item_saved_cocktail_image"
+            android:layout_marginHorizontal="8dp"
+            tools:text="Desc" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
